@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    
+    <title>Busque Cep</title>
+</head>
+<body>
+    <main>
+        <div class="controle">
+
+            <div class="topo">
+                
+                <div class="controleIcon">
+                    <i class="bi bi-person-arms-up"></i>
+                    <p>Criação de conta</p>
+                </div>
+    
+                <p id="linha1">_________</p>
+    
+                <div class="controleIcon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>Endereço</p>
+                </div>
+    
+                <p id="linha2">________________________</p>
+                
+                <div class="controleIcon pagamento">
+                    <i class="bi bi-credit-card-fill"></i>
+                    <p>Pagamento</p>
+                </div>
+    
+            </div><!-- FIM topo -->
+            
+            <div class="topoFormulario">
+                <h1>Cadastre o seu endereço</h1>
+                <h4>Preencha os campos para o envio dos produtos</h4>
+            </div>
+            
+
+            <div class="controleIcone">
+                <div class="elementoCarregar" role="status">
+                    <i class="bi bi-arrow-clockwise"></i>
+                </div>    
+            </div>
+
+            <div class="controleJanela ocultar" id="caixa"> 
+                <!-- JS -->
+            </div>
+            
+
+            <form class="formulario" id="idformulario">
+                
+                <div class="topoFormulario">
+        
+                    <input type="text" class="cep" id="idcep" name="cep" required minlength="8" maxlength="8" placeholder="Digite o seu CEP">
+
+                </div><!-- FIM topoFormulario -->
+    
+
+                <div class="formularioInput">
+
+                    <input type="text" class="rua controleInput" id="idrua"  name="rua" placeholder="Rua" disabled required data-input>
+        
+                    <label for="idcomplemento"></label>
+                    <input type="text" class="complemento controleInput" id="idcomplemento" name="complemento" disabled data-input  placeholder="Digite o complemento">
+        
+                    <label for="idcidade"></label>
+                    <input type="text" class="cidade controleInput" id="idcidade" name="cidade" disabled required data-input  placeholder="Cidade">
+        
+                    <label for="idnresidencia"></label>
+                    <input type="text" class="nresidencia controleInput" id="idnresidencia" name="nresidencia" disabled required data-input  placeholder="Digite o número da residência">
+        
+                    <label for="idbairro"></label>
+                    <input type="text" class="bairro controleInput" id="idbairro" name="bairro" disabled required data-input  placeholder="Bairro">
+        
+                    <select name="estado" class="escolhaestado " id="idestado" disabled required data-input>
+                        <option value="" selected>Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+
+                </div><!-- FIM formularioInput -->
+
+                <div class="botaoCadastrar">
+                    <button type="submit" id="idcadastrar">Cadastrar</button>
+                </div>
+                
+            </form><!-- FIM formulario -->
+
+
+        </div><!-- FIM controle -->
+        
+    </main>
+</body>
+</html>
