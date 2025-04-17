@@ -314,8 +314,9 @@ body{
     }
     .formulario{
         position: relative;
-        right: 80px;
-        width: 400px;
+        right: 70px;
+        width: 350px;
+        
     }
     .topoFormulario h1{
         width: 400px;
