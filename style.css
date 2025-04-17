@@ -32,12 +32,15 @@ body{
     flex-direction: row;
     
 }
+.person{
+    right: 25px;
+}
 .topo #linha1{
     text-align: center;
     font-size: 30px;
     color:rgb(187, 122, 2);
     position: relative;
-    left: -40px;
+    left: -30px;
     z-index: -1;
 }
 .topo #linha2{
@@ -46,7 +49,6 @@ body{
     color: rgba(255, 255, 255, 0.226);
     z-index: -1;
     position: relative;
-    right: 10px;
 }
 
 .controleIcon{
@@ -65,15 +67,7 @@ body{
     color: white;
     background-color: rgb(187, 122, 2);
 }
-.person,.location{
-    position: relative;
-    right: 20px;
-}
-.person p{
-    font-size: 15px!important;
-    position: relative;
-    left: 15px;
-}
+
 .controleIcon p{
     padding: 10px 0;
     font-size: 20px;
@@ -305,13 +299,22 @@ body{
     .controleIcon i{
         padding: 7px 11px;
     }
+    .person,.location{
+        position: relative;
+        right: 20px;
+    }
+    .person p{
+        font-size: 15px!important;
+        position: relative;
+        left: 16px;
+    }
     .controleIcon p{
         font-size: 15px;
         white-space: nowrap;
     }
     .formulario{
         position: relative;
-        right: 60px;
+        right: 80px;
         width: 400px;
     }
     .topoFormulario h1{
