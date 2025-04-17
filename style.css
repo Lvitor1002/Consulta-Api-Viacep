@@ -37,7 +37,7 @@ body{
     font-size: 30px;
     color:rgb(187, 122, 2);
     position: relative;
-    right: 10px;
+    left: -40px;
     z-index: -1;
 }
 .topo #linha2{
@@ -45,6 +45,8 @@ body{
     font-size: 30px;
     color: rgba(255, 255, 255, 0.226);
     z-index: -1;
+    position: relative;
+    right: 10px;
 }
 
 .controleIcon{
@@ -62,6 +64,15 @@ body{
     border-radius: 100px;
     color: white;
     background-color: rgb(187, 122, 2);
+}
+.person,.location{
+    position: relative;
+    right: 20px;
+}
+.person p{
+    font-size: 15px!important;
+    position: relative;
+    left: 15px;
 }
 .controleIcon p{
     padding: 10px 0;
@@ -300,19 +311,19 @@ body{
     }
     .formulario{
         position: relative;
-        right: 92px;
+        right: 60px;
         width: 400px;
     }
     .topoFormulario h1{
         width: 400px;
         font-size: 25px;
         position: relative;
-        right: 80px;
+        right: 50px;
     }
     .topoFormulario h4{
         font-size: 13px;
         position: relative;
-        right: 80px;
+        right: 50px;
     }
     .controleJanela{
         left: -60px;
