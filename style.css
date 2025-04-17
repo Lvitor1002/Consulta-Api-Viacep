@@ -301,7 +301,7 @@ body{
     }
     .person,.location{
         position: relative;
-        right: 20px;
+        right: 16px;
     }
     .person p{
         font-size: 15px!important;
@@ -314,7 +314,7 @@ body{
     }
     .formulario{
         position: relative;
-        right: 70px;
+        right: 65px;
         width: 350px;
         
     }
