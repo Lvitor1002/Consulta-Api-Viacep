@@ -177,9 +177,6 @@ formulario.addEventListener("submit",function(evento){
         formulario.reset()
 
         habilitar_desabilitar_Inputs()
-
-        iconeLoader(true)
-
     }, 1000)
 })
 
