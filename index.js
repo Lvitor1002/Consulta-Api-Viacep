@@ -74,7 +74,7 @@ formulario.addEventListener("submit", function(evento){
         
         numeroResidencia.style.border = '1px solid red'
 
-        incorreto("Campo 'Nº Residência' incorreto. Tente novamente com no máximo 5 dígito")
+        incorreto("Campo 'Nº Residência' incorreto. Tente novamente com no máximo 5 dígitos")
         return
     }
 
