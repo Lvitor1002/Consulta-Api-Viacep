@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <script type="module" src="index.js" defer></script>
     
     <title>Busque Cep</title>
 </head>
@@ -40,45 +41,34 @@
                 <h1>Cadastre o seu endereço</h1>
                 <h4>Preencha os campos para o envio dos produtos</h4>
             </div>
-            
 
-            <div class="controleIcone">
-                <div class="elementoCarregar" role="status">
-                    <i class="bi bi-arrow-clockwise"></i>
-                </div>    
-            </div>
-
-            <div class="controleJanela ocultar" id="caixa"> 
-                <!-- JS -->
-            </div>
-            
 
             <form class="formulario" id="idformulario">
                 
                 <div class="topoFormulario">
         
-                    <input type="text" class="cep" id="idcep" name="cep" required minlength="8" maxlength="8" placeholder="Digite o seu CEP">
+                    <input type="text" class="cep" id="idcep" name="cep" minlength="8" maxlength="8" placeholder="Digite o seu CEP">
 
                 </div><!-- FIM topoFormulario -->
     
 
                 <div class="formularioInput">
 
-                    <input type="text" class="rua controleInput" id="idrua"  name="rua" placeholder="Rua" disabled required data-input>
+                    <input type="text" class="rua controleInput" id="idrua"  name="rua" placeholder="Rua" disabled data-input>
         
                     <label for="idcomplemento"></label>
                     <input type="text" class="complemento controleInput" id="idcomplemento" name="complemento" disabled data-input  placeholder="Digite o complemento">
         
                     <label for="idcidade"></label>
-                    <input type="text" class="cidade controleInput" id="idcidade" name="cidade" disabled required data-input  placeholder="Cidade">
+                    <input type="text" class="cidade controleInput" id="idcidade" name="cidade" disabled data-input  placeholder="Cidade">
         
                     <label for="idnresidencia"></label>
-                    <input type="text" class="nresidencia controleInput" id="idnresidencia" name="nresidencia" disabled required data-input  placeholder="Digite o número da residência">
+                    <input type="text" class="nresidencia controleInput" id="idnresidencia" name="nresidencia" disabled data-input  placeholder="Digite o número da residência">
         
                     <label for="idbairro"></label>
-                    <input type="text" class="bairro controleInput" id="idbairro" name="bairro" disabled required data-input  placeholder="Bairro">
+                    <input type="text" class="bairro controleInput" id="idbairro" name="bairro" disabled data-input  placeholder="Bairro">
         
-                    <select name="estado" class="escolhaestado " id="idestado" disabled required data-input>
+                    <select name="estado" class="escolhaestado " id="idestado" disabled data-input>
                         <option value="" selected>Estado</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
