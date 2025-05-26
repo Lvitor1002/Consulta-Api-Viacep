@@ -36,6 +36,7 @@ cepInput.addEventListener("blur",async function(evento){
         selectUF.value = dados.uf
 
         todosInputs.forEach((input)=>{
+            cepInput.style.border = '.5px solid rgba(255, 255, 255, 0.212)'
             input.removeAttribute("disabled")
         })
 
@@ -49,7 +50,15 @@ cepInput.addEventListener("blur",async function(evento){
 formulario.addEventListener("submit", function(evento){
 
     evento.preventDefault()
-    
+
+    const cep = cepInput.value.trim()
+    if(!cep){
+        cepInput.style.border = '1px solid red'
+        incorreto("Entrada inválida! Verifique o campo 'CEP'..")
+        return
+    }
+
+
     const complemento = campoComplemento.value.trim()
     if(complemento.length > 20 || !complemento){
         
@@ -72,6 +81,7 @@ formulario.addEventListener("submit", function(evento){
     todosInputs.forEach((input)=>{
         numeroResidencia.style.border = 'none'
         campoComplemento.style.border = 'none'
+        
         input.setAttribute("disabled","disabled")
     })
 
